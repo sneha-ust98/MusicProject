@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Eurekaservermusic/Eurekaserver.iml" filepath="$PROJECT_DIR$/Eurekaservermusic/Eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/Favourites/Favourites.iml" filepath="$PROJECT_DIR$/Favourites/Favourites.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JWTAuthentication/JWTAuthentication.iml" filepath="$PROJECT_DIR$/JWTAuthentication/JWTAuthentication.iml" />
       <module fileurl="file://$PROJECT_DIR$/JWTAuthentication_service/JWTAuthentication_service.iml" filepath="$PROJECT_DIR$/JWTAuthentication_service/JWTAuthentication_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recommentation/Recommentation.iml" filepath="$PROJECT_DIR$/Recommentation/Recommentation.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/musicapp.iml" filepath="$PROJECT_DIR$/.idea/musicapp.iml" />
