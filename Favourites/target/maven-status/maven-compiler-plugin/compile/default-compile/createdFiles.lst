@@ -1,0 +1,7 @@
+com/example/Favourites/Service/FavouriteServiceImpl.class
+com/example/Favourites/Controller/FavouritesController.class
+com/example/Favourites/Service/FavouriteService.class
+com/example/Favourites/FavouritesApplication.class
+com/example/Favourites/Model/Favourites.class
+com/example/Favourites/Repository/FavouriteRepository.class
+com/example/Favourites/Swagger/SwaggerConfig.class

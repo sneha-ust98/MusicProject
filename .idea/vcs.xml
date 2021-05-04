@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JWTAuthentication_service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jwt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/maincourse_java_jfse_mc04_jwt_exercise" vcs="Git" />
+  </component>
+</project>

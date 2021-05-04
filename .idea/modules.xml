@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Eurekaservermusic/Eurekaserver.iml" filepath="$PROJECT_DIR$/Eurekaservermusic/Eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Favourites/Favourites.iml" filepath="$PROJECT_DIR$/Favourites/Favourites.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JWTAuthentication_service/JWTAuthentication_service.iml" filepath="$PROJECT_DIR$/JWTAuthentication_service/JWTAuthentication_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recommentation/Recommentation.iml" filepath="$PROJECT_DIR$/Recommentation/Recommentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/musicapp.iml" filepath="$PROJECT_DIR$/.idea/musicapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/musicservice/musicservice.iml" filepath="$PROJECT_DIR$/musicservice/musicservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuulapiGateway/zuulapiGateway.iml" filepath="$PROJECT_DIR$/zuulapiGateway/zuulapiGateway.iml" />
+    </modules>
+  </component>
+</project>
