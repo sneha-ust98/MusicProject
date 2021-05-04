@@ -12,6 +12,7 @@
         <module name="Eurekaserver" />
         <module name="Recommentation" />
         <module name="zuulapiGateway" />
+        <module name="JWTAuthentication_service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
