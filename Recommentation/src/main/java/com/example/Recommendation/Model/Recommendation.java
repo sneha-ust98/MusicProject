@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.validation.constraints.NotBlank;
 import java.util.Collection;
 
 @Document(collection = "Recommentation_Record")
@@ -17,10 +18,15 @@ import java.util.Collection;
 public class Recommendation
 {
     @Id
+    @NotBlank(message = "Id is Mandatory")
     private int id;
+    private int counter;
+    @NotBlank(message = "Title is Mandatory")
     private String title;
+    @NotBlank(message = "Artist is Mandatory")
     private String artist;
+    @NotBlank(message = "Release Year is Mandatory")
     private int releaseyear;
+    @NotBlank(message = "Genre is Mandatory")
     private String genre;
-
 }

@@ -8,13 +8,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
 
 
 @Entity
-@Table(name = "user_Cred")
+@Table(name = "User_Records")
 public class User {
     @Id
     @Column(name = "email",unique = true)
@@ -22,8 +23,11 @@ public class User {
     @Email
     private String id;
 
+
     @NotBlank(message = "password is mandatory")
     private String password;
+
+    @Column(name = "firstname")
 
     @NotBlank(message = "FirstName is required")
     private String firstname;

@@ -7,6 +7,8 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.validation.constraints.NotBlank;
+
 @Document(collection = "music_records")
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,9 +17,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Music
 {
     @Id
+    @NotBlank(message = "Id is mandatory")
     private int id;
+    @NotBlank(message = "Title is Mandatory")
     private String title;
+    @NotBlank(message = "Artist is Mandatory")
     private String artist;
+    @NotBlank(message = "Release Year is Mandatory")
     private int releaseyear;
+    @NotBlank(message = "Genre is Mandatory")
     private String genre;
 }

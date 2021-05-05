@@ -20,19 +20,19 @@ public class SwaggerConfig {
 
     @Bean
     public Docket postApi(){
-        return new Docket(DocumentationType.SWAGGER_2).groupName("JWT_Authentication").
+        return new Docket(DocumentationType.SWAGGER_2).groupName("MusicApp").
                 apiInfo(apiInfo()).select().paths(postPaths()).build();
     }
 
     private Predicate<String> postPaths(){
-        return or(regex("/api/v1/.*"),regex("/api/v1/.*"));
+        return or(regex("/.*"),regex("/.*"));
     }
     private ApiInfo apiInfo(){
-        return  new ApiInfoBuilder().title("World Explorer Application JWT Authentication Module Documentation")
-                .description("this service takes care of the authentication part of the application")
-                .contact("Krishnanjali.Nair@ust.com")
-                .license("stackroute")
-                .licenseUrl("www.stackroute.com")
+        return  new ApiInfoBuilder().title("Music Application authentication service")
+                .description("Authentication service")
+                .contact("UST@gmail.com")
+                .license("UST")
+                .licenseUrl("www.ust.com")
                 .termsOfServiceUrl("abc@gmail.com")
                 .version("1.0").build();
     }

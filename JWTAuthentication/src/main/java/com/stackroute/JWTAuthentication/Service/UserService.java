@@ -1,8 +1,5 @@
 package com.stackroute.JWTAuthentication.Service;
 
-
-
-
 import com.stackroute.JWTAuthentication.Exception.UserAlreadyExistsException;
 import com.stackroute.JWTAuthentication.Exception.UserNotFoundException;
 import com.stackroute.JWTAuthentication.Model.User;

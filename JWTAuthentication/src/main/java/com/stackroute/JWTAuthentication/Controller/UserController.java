@@ -13,6 +13,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 
 @RestController
 /**
@@ -44,7 +46,7 @@ public class UserController {
 
 
     @PostMapping("register")
-    public ResponseEntity<?> registerUser(@RequestBody User user) {
+    public ResponseEntity<?> registerUser(@Valid @RequestBody User user) {
         try {
             User savedUser = userService.saveUser(user);
             responseEntity = new ResponseEntity<>(savedUser, HttpStatus.CREATED);
