@@ -4,7 +4,7 @@ import com.stackroute.musicservice.model.Music;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
-
+//it markes  the specific class as a dat access object
 @Repository
 public interface MusicRepository extends MongoRepository<Music,Integer>
 {

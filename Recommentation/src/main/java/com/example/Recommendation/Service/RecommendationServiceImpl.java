@@ -13,6 +13,7 @@ import java.util.List;
 public class RecommendationServiceImpl implements RecommendationService {
     @Autowired
     private RecommendationRepository repository;
+    //implementation of service methods using counter
 
     @Override
     public Recommendation saveSong(Recommendation recommendation) {
@@ -29,11 +30,6 @@ public class RecommendationServiceImpl implements RecommendationService {
         }
 return repository.save(recommendation);
     }
-
-
-
-
-
 
     @Override
     public List<Recommendation> getAllSongs() {

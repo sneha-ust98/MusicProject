@@ -12,20 +12,23 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-
+//restcontroller annotation is used to create restfull web services using spring MVC
 @RestController
 @AllArgsConstructor
 public class RecommendationController
 {
+    //logger object creation
     private static final Logger log= LoggerFactory.getLogger(RecommendationController.class);
     @Autowired
     private RecommendationService service;
+    //method to get recommented songs as per the counter
     @GetMapping("/recommend")
     public List<Recommendation> getSongs(){
         log.info("This is to get all reccomentations");
         return service.getAllSongs();
     }
 
+    //method to save the songs
     @PostMapping("/recommend")
     public ResponseEntity<Recommendation> saveSong(@RequestBody Recommendation recommendation){
         log.info("This is to add reccomentations");
@@ -33,6 +36,7 @@ public class RecommendationController
     }
 
 
+    //methods to delete the songs
     @DeleteMapping("/recommend/{id}")
     public void deleteSong(@PathVariable int id){
         log.info("this is to delete recommentations");

@@ -16,14 +16,17 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+//restcontroller annotation is used to create restfull web services using spring MVC
 @RestController
 @AllArgsConstructor
 
 public class FavouritesController
 {
+    //logger object creation
     private static final Logger log=LoggerFactory.getLogger(FavouritesController.class);
     @Autowired
     private FavouriteService service;
+    //method to post the favourites of the user
     @PostMapping("/favourite")
 
     public ResponseEntity<Favourites> saveSong( @RequestBody Favourites favourites) throws FavouriteAlreadyExists {
@@ -31,7 +34,7 @@ public class FavouritesController
         return new ResponseEntity<Favourites>(service.saveSong(favourites), HttpStatus.CREATED);
 
     }
-
+    //method to delete the favourite list using id
     @DeleteMapping("/favourite/{id}")
     public void deleteSong(@PathVariable int id){
         log.info("This is for deleting favourites");
@@ -39,6 +42,7 @@ public class FavouritesController
         service.deleteSong(id);
     }
 
+    //method to get favourite songs
     @GetMapping("/favourites")
     @ResponseBody
     public List<Favourites> getSongs(@RequestParam ("userName") String userName)

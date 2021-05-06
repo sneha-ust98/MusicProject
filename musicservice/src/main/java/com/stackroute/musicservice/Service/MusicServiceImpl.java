@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+//@service indicate annotated class is a service which hold business logic in service layer
 @Service
 @AllArgsConstructor
 public class MusicServiceImpl implements MusicService
@@ -15,7 +15,7 @@ public class MusicServiceImpl implements MusicService
     @Autowired
     private MusicRepository repository;
 
-
+    //implementation of service methods
     @Override
     public Music saveSong(Music music) {
         return repository.save(music);

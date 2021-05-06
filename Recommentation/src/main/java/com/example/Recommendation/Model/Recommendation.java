@@ -17,6 +17,7 @@ import java.util.Collection;
 @Setter
 public class Recommendation
 {
+    //@id annotation makes id variable as primary key
     @Id
     @NotBlank(message = "Id is Mandatory")
     private int id;

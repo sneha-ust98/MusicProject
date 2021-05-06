@@ -17,15 +17,18 @@ import java.util.List;
 @AllArgsConstructor
 public class MusicController
 {
+    //logger object creation
     private static final Logger log= LoggerFactory.getLogger(MusicController.class);
     @Autowired
     private MusicService service;
+    //get the songs
     @GetMapping("/songs")
     public List<Music> getSongs(){
         log.info("this is to get all songs");
         return service.getAllSongs();
     }
 
+    //post the songs
     @PostMapping("/song")
     public ResponseEntity<Music> saveSong( @RequestBody Music music){
         log.info("This is to add songs");
@@ -33,6 +36,7 @@ public class MusicController
     }
 
 
+    //delete the songs
     @DeleteMapping("/song/{id}")
     public void deleteSong(@PathVariable int id)
     {
@@ -41,21 +45,25 @@ public class MusicController
     }
 
 
+    //update the songs
     @PutMapping("song")
     public ResponseEntity<Music> updateSong(@RequestBody Music music){
         return  new ResponseEntity<Music>(service.updateSong(music),HttpStatus.OK);
     }
+    //get the songs by release year
     @GetMapping("song1/{releaseyear}")
     public ResponseEntity<Music> getSongByreleaseyear(@PathVariable int releaaseyear)
     {
         return new ResponseEntity<Music>(service.getSongByreleaseyear(releaaseyear),HttpStatus.OK);
     }
+    //get the song by genre and artist
     @GetMapping("song2/{genre}/{artist}")
 
     public ResponseEntity<Music> getSongBygenreAndartist(@PathVariable String genre,@PathVariable String artist)
     {
         return new ResponseEntity<Music>(service.getSongBygenreAndartist(genre, artist),HttpStatus.OK);
     }
+    //get the songs by title
     @GetMapping("song3/{title}")
     public ResponseEntity<Music> getSongBytitle(@PathVariable String title)
     {

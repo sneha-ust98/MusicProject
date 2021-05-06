@@ -10,6 +10,7 @@ import org.springframework.data.repository.query.Param;
 
 import javax.validation.constraints.NotBlank;
 
+// to define properties
 @Document(collection = "Favourites_record")
     @AllArgsConstructor
     @NoArgsConstructor
@@ -17,6 +18,7 @@ import javax.validation.constraints.NotBlank;
     @Setter
     public class Favourites
     {
+        //@Id annotation to make id variable as primary key
         @Id
         @NotBlank(message = "Id is Mandatory")
         private int id;

@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface FavouriteService
 {
+    //functionalities
     Favourites saveSong(Favourites favourites) throws FavouriteAlreadyExists;
     void deleteSong(int id);
     List<Favourites> getAllSongs();
