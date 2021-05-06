@@ -28,7 +28,7 @@ public class SwaggerConfig
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("Student Application Rest API Documentation")
+        return new ApiInfoBuilder().title("Music Application Rest API Documentation")
                 .description("This is Favourite microservices")
                 .contact("musicapp@gmail.com")
                 .license("UST")

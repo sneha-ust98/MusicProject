@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.NotBlank;
 
-@Document(collection = "music_records")
+@Document(collection = "music_abc")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter

@@ -27,7 +27,7 @@ public class MusicController
     }
 
     @PostMapping("/song")
-    public ResponseEntity<Music> saveSong(@Valid @RequestBody Music music){
+    public ResponseEntity<Music> saveSong( @RequestBody Music music){
         log.info("This is to add songs");
         return new ResponseEntity<Music>(service.saveSong(music), HttpStatus.CREATED);
     }
@@ -52,7 +52,7 @@ public class MusicController
     }
     @GetMapping("song2/{genre}/{artist}")
 
-    public ResponseEntity<Music> getUserByGenderAndAge(@PathVariable String genre,@PathVariable String artist)
+    public ResponseEntity<Music> getSongBygenreAndartist(@PathVariable String genre,@PathVariable String artist)
     {
         return new ResponseEntity<Music>(service.getSongBygenreAndartist(genre, artist),HttpStatus.OK);
     }

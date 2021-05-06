@@ -26,7 +26,7 @@ public class FavouritesController
     private FavouriteService service;
     @PostMapping("/favourite")
 
-    public ResponseEntity<Favourites> saveSong(@Valid @RequestBody Favourites favourites) throws FavouriteAlreadyExists {
+    public ResponseEntity<Favourites> saveSong( @RequestBody Favourites favourites) throws FavouriteAlreadyExists {
         log.info("This is for getting favourites");
         return new ResponseEntity<Favourites>(service.saveSong(favourites), HttpStatus.CREATED);
 

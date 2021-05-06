@@ -27,7 +27,7 @@ public class RecommendationController
     }
 
     @PostMapping("/recommend")
-    public ResponseEntity<Recommendation> saveSong(@Valid @RequestBody Recommendation recommendation){
+    public ResponseEntity<Recommendation> saveSong(@RequestBody Recommendation recommendation){
         log.info("This is to add reccomentations");
         return new ResponseEntity<Recommendation>(service.saveSong(recommendation), HttpStatus.CREATED);
     }
