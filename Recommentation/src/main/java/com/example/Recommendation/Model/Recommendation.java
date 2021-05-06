@@ -19,14 +19,12 @@ public class Recommendation
 {
     //@id annotation makes id variable as primary key
     @Id
-    @NotBlank(message = "Id is Mandatory")
     private int id;
     private int counter;
     @NotBlank(message = "Title is Mandatory")
     private String title;
     @NotBlank(message = "Artist is Mandatory")
     private String artist;
-    @NotBlank(message = "Release Year is Mandatory")
     private int releaseyear;
     @NotBlank(message = "Genre is Mandatory")
     private String genre;

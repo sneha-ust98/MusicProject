@@ -20,7 +20,6 @@ import javax.validation.constraints.NotBlank;
     {
         //@Id annotation to make id variable as primary key
         @Id
-        @NotBlank(message = "Id is Mandatory")
         private int id;
         @NotBlank(message = "userName is Mandatory")
         private String userName;
@@ -28,7 +27,6 @@ import javax.validation.constraints.NotBlank;
         private String title;
         @NotBlank(message = "Artist is Mandatory")
         private String artist;
-        @NotBlank(message = "Release Year is Mandatory")
         private int releaseyear;
         @NotBlank(message = "Genre is Mandatory")
         private String genre;

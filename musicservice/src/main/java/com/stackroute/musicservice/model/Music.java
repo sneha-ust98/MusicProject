@@ -24,7 +24,6 @@ public class Music
     private String title;
     @NotBlank(message = "Artist is Mandatory")
     private String artist;
-    @NotBlank(message = "Release Year is Mandatory")
     private int releaseyear;
     @NotBlank(message = "Genre is Mandatory")
     private String genre;

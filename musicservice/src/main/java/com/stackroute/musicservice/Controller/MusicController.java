@@ -30,7 +30,7 @@ public class MusicController
 
     //post the songs
     @PostMapping("/song")
-    public ResponseEntity<Music> saveSong( @RequestBody Music music){
+    public ResponseEntity<Music> saveSong(@Valid @RequestBody Music music){
         log.info("This is to add songs");
         return new ResponseEntity<Music>(service.saveSong(music), HttpStatus.CREATED);
     }
